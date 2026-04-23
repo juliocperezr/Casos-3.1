@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz por Casos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1>Análisis de Casos</h1>
+
+    <!-- PROGRESO -->
+    <div class="progreso">
+        <div class="paso activo" id="p1">1</div>
+        <div class="paso" id="p2">2</div>
+        <div class="paso" id="p3">3</div>
+    </div>
+
+    <!-- CASO -->
+    <div class="card">
+
+        <div id="historia"></div>
+        <div id="pregunta"></div>
+
+        <div id="opciones"></div>
+
+        <div class="botones">
+            <button onclick="verificar()">Verificar</button>
+           <button id="btnRetry" onclick="reiniciarIntento()" style="display:none;">
+    Reintentar
+</button>
+            <button id="btnNext" onclick="siguienteCaso()" style="display:none;">Siguiente</button>
+        </div>
+
+        <div id="mensaje"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

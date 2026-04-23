@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    background:#dcdcdc;
+    font-family:Arial;
+}
+
+.contenedor{
+    max-width:800px;
+    margin:auto;
+    padding:30px 15px;
+}
+
+h1{
+    text-align:center;
+    color:#6f123a;
+}
+
+.progreso{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.paso{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#ccc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.paso.activo{
+    background:#6f123a;
+    color:#fff;
+}
+
+.paso.completo{
+    background:#16a34a;
+    color:#fff;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+}
+
+#historia{
+    margin-bottom:15px;
+}
+
+#pregunta{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.opcion{
+    background:#ab2453;
+    color:white;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.opcion.selected{
+    background:#6f123a;
+}
+
+.correcta{
+    background:#16a34a !important;
+}
+
+.incorrecta{
+    background:#dc2626 !important;
+}
+
+.botones{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    background:#6f123a;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#mensaje{
+    text-align:center;
+    margin-top:10px;
+    font-weight:bold;
+}
