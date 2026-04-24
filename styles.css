@@ -99,3 +99,11 @@ button{
     margin-top:10px;
     font-weight:bold;
 }
+
+#tituloCaso{
+    font-size:22px;
+    font-weight:bold;
+    color:#6f123a;
+    margin-bottom:15px;
+    text-align:center;
+}
