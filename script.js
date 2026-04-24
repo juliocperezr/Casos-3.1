@@ -1,17 +1,20 @@
 const casos = [
 {
+    titulo:"Caso 1: Nivel Preescolar (Detección y Notificación)",
     historia:"En el jardín de niños, la docente observa que un alumno de segundo grado, quien solía ser muy participativo, ha comenzado a presentar crisis de llanto sin explicación, se niega a entrar al baño solo y ha tenido episodios recientes de incontinencia urinaria. Al observar el recreo, nota que dos compañeros le quitan constantemente su material y se burlan cuando llora.",
     pregunta:"De acuerdo con el protocolo, ¿cuál es la acción inmediata que debe realizar la docente ante estos indicadores?",
     opciones:["Ignorar la situación por considerarla una conducta normal del desarrollo evolutivo en preescolar.","Citar a los padres de los niños agresores para que ellos resuelvan el conflicto de manera externa.","Atender los indicadores de riesgo, salvaguardar la integridad del alumno y notificar al personal con funciones de dirección.","Sancionar a los niños involucrados sin levantar documentación para no afectar su expediente."],
     correcta:3
 },
 {
+    titulo:"Caso 2: Nivel Primaria (Intervención y Documentación)",
     historia:"Un grupo de alumnos de quinto grado reporta al director que un compañero es golpeado y pateado sistemáticamente por otro estudiante durante la salida, y que este le ha quitado y destruido varios útiles escolares (acoso físico). El director confirma que existe intención, repetición y duración en esta conducta.",
     pregunta:"¿Qué instrumentos deben elaborarse de manera conjunta entre el director y el docente para documentar legalmente este caso?",
     opciones:["Únicamente una carta compromiso informal firmada por el alumno que ejerce el acoso.","Un reporte disciplinario estándar que no mencione la palabra \"acoso\"","Elaborar las Actas de Hechos para la víctima y quien ejerce la conducta, además de la Bitácora de seguimiento siendo ésta obligatoria para garantizar el debido proceso y la atención legal del caso.","No es necesario elaborar documentos si se llega a un acuerdo verbal con los padres de familia."],
     correcta:3
 },
 {
+    titulo:"Nivel Secundaria (Ciberacoso y Responsabilidades)",
     historia:"Se detecta que un grupo de adolescentes de tercer grado de secundaria ha creado un grupo en redes sociales para difundir imágenes editadas y rumores humillantes sobre una compañera, afectando su imagen pública y aislándola del grupo (ciberacoso y acoso socioemocional).",
     pregunta:"En este caso de ciberacoso, ¿cuál es una de las medidas de no repetición y prevención que el personal directivo debe gestionar según el protocolo?",
     opciones:["Prohibir el uso de teléfonos celulares a toda la escuela de forma permanente como única solución.","Establecer vínculos con instituciones de ciberseguridad para realizar medidas clave para prevenir y erradicar el ciberacoso con acciones de alfabetización digital y uso responsable de plataformas.","Expulsar inmediatamente a los alumnos responsables sin realizar ninguna otra acción formativa.","Sugerir a la víctima que cierre sus redes sociales para que el problema desaparezca por sí solo."],
@@ -26,6 +29,7 @@ let seleccion = null;
 function cargarCaso(){
     const caso = casos[nivel];
 
+    document.getElementById("tituloCaso").innerText = caso.titulo;
     document.getElementById("historia").innerText = caso.historia;
     document.getElementById("pregunta").innerText = caso.pregunta;
 
