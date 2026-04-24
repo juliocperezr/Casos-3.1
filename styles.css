@@ -59,7 +59,7 @@ h1{
 }
 
 .opcion{
-    background:#ab2453;
+    background:#e8e6e7;
     color:white;
     padding:12px;
     margin-bottom:10px;
@@ -68,7 +68,7 @@ h1{
 }
 
 .opcion.selected{
-    background:#6f123a;
+    background:#ceb585;
 }
 
 .correcta{
